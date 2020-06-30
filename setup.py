@@ -17,17 +17,14 @@ seriesVote = []
 categoricalSeries = []
 availableUsers = []
 
-# Data collection
+# Data Collection Phase
 # startTime = pd.Timestamp('2019-11-13 00:00:00-05:00')
 # endTime = pd.Timestamp('2020-02-08 00:00:00-05:00')
-# Evaluation
+
+# Temperature Control Phase
 startTime = pd.Timestamp('2020-02-18 17:00:00-05:00')
 endTime = pd.Timestamp('2020-03-06 17:00:00-05:00')
 
-# endTime = pd.Timestamp('2019-11-17 23:59:59-05:00')
-# endTime = pd.Timestamp('2019-11-18 00:00:00-05:00')
-# startTime = pd.Timestamp('2019-11-26 11:00:00-05:00')
-# endTime = pd.Timestamp('2019-11-15 11:20:00-05:00')
 userSeries = {}
 occGaps = []
 replaceIntervals = []
@@ -59,7 +56,6 @@ def init():
     seriesEnvironment = outputSeries[:20]
     seriesBiosignal = outputSeries[20:29]
     seriesVote = outputSeries[29:]
-    # COMMENT OUT HERE FOR DATA COLLECTION
     categoricalSeries = ['o_condition']
     availableUsers = ['U1', 'U2', 'U3']
 

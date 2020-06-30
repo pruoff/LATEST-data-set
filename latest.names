@@ -2,14 +2,20 @@
 | in the winter of 2019/2020 at CMU's Intelligent Workplace.
 | [insert link to repo]
 |
-| Donor: Nadine von Frankenberg and Patrick Ruoff,
+| Donor: Patrick Ruoff and Nadine von Frankenberg,
 |        Chair for Applied Software Engineering
 |        Technical University of Munich
 |        e-mail: patrick.ruoff@tum.de for questions.
 |
+| Files: data_collection_phase.csv, 
+|        temperature_control_phase.csv
+|
 |
 | The prediction task is to determine whether the participant
-| turns on their radiant heating panel or not.
+| turns on their radiant heating panel or not. In the 
+| temperature control phase, a ML model controlled the 
+| radiant heating plate automatically while the occupant
+| could still intervene - stopping the process for 10 minutes.
 |
 |
 | First cited in:
@@ -24,7 +30,8 @@
 |
 
 
-NOTICE: "U#" in the feature names must be replaced by one of the participants' codes "U1", "U2", or "U3".
+NOTICE: "U#" in the feature names must be replaced by one of the 
+        participants' codes "U1", "U2", or "U3".
 
  --- target variable --- 
 U#_infrared_heater_switch: categorical; 0 = off, 1 = on
@@ -48,4 +55,6 @@ U#_heart_rate: continuous in bpm; heart rate measured at participant's wrist
 U#_skin_temp: continuous in °C; skin temperature measured at participant's wrist
 U#_thermal_comfort_vote: categorical; 0 = cooler, 1 = no change, 2 = warmer
 U#_thermal_sensation_vote: categorical; 0 = very cold, 1 = cold, 2 = neutral, 3 = warm, 4 = very warm
+
+ --- only for Temperature Control Phase ---
 U#_last_command_encoded: categorical; -3 = "9pm safety off", -2 = "occupant off", -1 = "occupant left off", 0 = "PTC off", 1 "PTC on", 2 "occupant on"
