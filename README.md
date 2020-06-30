@@ -4,8 +4,9 @@ This module provides the data set collected in a case study for validating the L
 system described in [LATEST](https://github.com/pruoff/LATEST).
 
 ### File Descriptions
-* `raw_data_from_influxdb_to_csv.ipynb` imports `setup.py` and was applied to create 
-the main data sets. The only cleaning that takes place is time step fitting and 
+* `raw_data_from_influxdb_to_csv.ipynb` was applied to create the main data sets. It 
+imports `setup.py`, which uses the files in `series/`.
+The only cleaning that takes place is time step fitting and 
 interchanging manual fixes due technical circumstances, such as sensor exchanges. Also, 
 long periods in which no participant was at their workstation were removed.
 
