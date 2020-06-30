@@ -1,0 +1,51 @@
+| This data was collected as part of the LATEST project 
+| in the winter of 2019/2020 at CMU's Intelligent Workplace.
+| [insert link to repo]
+|
+| Donor: Nadine von Frankenberg and Patrick Ruoff,
+|        Chair for Applied Software Engineering
+|        Technical University of Munich
+|        e-mail: patrick.ruoff@tum.de for questions.
+|
+|
+| The prediction task is to determine whether the participant
+| turns on their radiant heating panel or not.
+|
+|
+| First cited in:
+| @inproceedings{kohavi-nbtree,
+|    author={Ron Kohavi},
+|    title={Scaling Up the Accuracy of Naive-Bayes Classifiers: a
+|           Decision-Tree Hybrid},
+|    booktitle={Proceedings of the Second International Conference on
+|               Knowledge Discovery and Data Mining},
+|    year = 2020,
+|    pages={to appear}}
+|
+
+
+NOTICE: "U#" in the feature names must be replaced by one of the participants' codes "U1", "U2", or "U3".
+
+ --- target variable --- 
+U#_infrared_heater_switch: categorical; 0 = off, 1 = on
+
+ --- features --- 
+floor_CO2: continuous in ppm; carbon dioxide levels measured on building floor
+floor_temp: continuous in °F; air temperature measured on building floor
+outside_cloudiness: continuous in %; cloudiness of the observed sky measured at nearby weather station
+outside_condition: categorical; textual description of the current weather
+outside_humidity: continuous in %; outside relative humidity measured at nearby weather station
+outside_pressure: continuous in hPa; outside atmospheric pressure measured at nearby weather station
+outside_temperature: continuous in °C; air temperature measured at nearby weather station
+outside_wind_speed: continuous in m/s; outside wind speed measured at nearby weather station
+U#_desk_hum: continuous in %; relative humidity measured at the participant's desk
+U#_desk_temp: continuous in °F; air temperature measured at the participant's desk
+corridor_hum: continuous in %; relative humidity measured at the corridor
+corridor_temp: continuous in °F; air temperature measured at the corridor
+U#_ambient_heater_temp: continuous in °F; water temperature measured at the participant's ambient heating mullion
+U#_galvanic_skin_response: continuous in kOhm; galvanic skin response measured at participant's wrist
+U#_heart_rate: continuous in bpm; heart rate measured at participant's wrist
+U#_skin_temp: continuous in °C; skin temperature measured at participant's wrist
+U#_thermal_comfort_vote: categorical; 0 = cooler, 1 = no change, 2 = warmer
+U#_thermal_sensation_vote: categorical; 0 = very cold, 1 = cold, 2 = neutral, 3 = warm, 4 = very warm
+U#_last_command_encoded: categorical; -3 = "9pm safety off", -2 = "occupant off", -1 = "occupant left off", 0 = "PTC off", 1 "PTC on", 2 "occupant on"
