@@ -1,3 +1,8 @@
+This is the official repository that presents the dataset from the following paper:
+
+> Nadine von Frankenberg, Patrick Ruoff, Bernd Bruegge, and Vivian Loftness. 2020. LATEST: a learning-based automated thermal environment control system. In <i>Adjunct Proceedings of the 2020 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2020 ACM International Symposium on Wearable Computers</i> (<i>UbiComp-ISWC '20</i>). Association for Computing Machinery, New York, NY, USA, 573–579. DOI:https://doi.org/10.1145/3410530.3414591
+
+
 # LATEST: Occupant-Thermal-Comfort-Data-Set
 
 This module provides the data set collected in a case study for validating the LATEST 
@@ -21,4 +26,3 @@ per occupant, which was used for training the models for the temperature control
 
 * `conda_env.yml` shows the conda environment used for the project. 
 
-### License
